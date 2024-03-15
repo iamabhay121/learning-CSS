@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,56 +7,40 @@
 }
 
 body {
-  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  min-height: 200vh;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.outer-container {
-  border: 3px dashed black;
-  width: 75vw;
-  height: 85vh;
-  margin: 40px auto;
-  position: relative;
-}
-
-.inner-container {
-  border: 2px solid blue;
-  width: 40vw;
-  height: 50vh;
-  margin: 200px auto;
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-content: space-evenly;
 }
 
 .box {
-  width: 150px;
-  height: 150px;
-  color: white;
-  padding: 1rem;
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 150px;
 }
 
-.absolute {
-  background-color: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.relative {
-  background-color: red;
-  position: relative;
-  top: 100px;
-  left: 200px;
-}
-
-.fixed {
-  background-color: green;
-  position: fixed;
-  top: 100px;
-}
-
-.sticky {
-  background-color: black;
-  position: sticky;
-  top: 0;
+.box:nth-child(2) {
+  flex: 2 2 150px;
+  order: 1;
 }
