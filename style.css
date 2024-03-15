@@ -38,4 +38,24 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+.relative {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.fixed {
+  background-color: green;
+  position: fixed;
+  top: 100px;
+}
+
+.sticky {
+  background-color: black;
+  position: sticky;
+  top: 0;
 }
