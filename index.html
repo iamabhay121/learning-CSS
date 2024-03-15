@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Lists</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <!-- Position Absolute: Absolute positioning needs a relative parent 
+    and if it doesn't have relative parent then it takes the initial boundaries or the initial box (browser window) -->
 
-<body>
-    <section class="columns">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nesciunt magni facere commodi quo consequatur explicabo, provident dolores dolorum non?</p>
-        <p>Quisquam, temporibus sint illum quaerat aperiam labore quidem qui placeat ipsum, odit vero fuga dolores sit repudiandae delectus necessitatibus totam.</p>
-        <!-- <h2>Next Heading</h2> -->
-        <p class="quote">&#34;Give up on your Dreams... And DIE..!!!!&#34;<span class="nowrap"> &#126; Levi </span></p>
-        <p>Id doloremque voluptates reprehenderit in! Ducimus, optio, nesciunt nihil dolor facilis impedit saepe voluptatibus nostrum aspernatur perferendis numquam velit laboriosam?</p>
-        <p>Quis sunt corporis tempora natus voluptatum fuga. Eveniet iure ex soluta porro, accusantium aperiam est cupiditate nam officia dolore nostrum?</p>
-    </section>
-    <p>Nesciunt voluptatum hic alias praesentium officia voluptatibus libero maiores? Fugiat quisquam est corporis. Quasi totam vitae id. Ipsum, harum obcaecati!</p>
-</body>
-
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="box absolute">
+          <p>Absolute</p>
+        </div>
+        <div class="box relative">
+          <p>Relative</p>
+        </div>
+        <div class="box fixed">
+          <p>Fixed</p>
+        </div>
+        <div class="box sticky">
+          <p>Sticky</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
